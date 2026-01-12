@@ -13,8 +13,12 @@
      char cidade[25]= "São_Bernardo";
      int populacao= 810729;
      float area= 409.5;
-     double pib= 58.200;
+     float pib= 58.200;
      int pontos_turisticos= 40;
+     float pib_percapta;
+     float densidade_populacional;
+
+    
     
     //Entrada de Dados Carta 1
 
@@ -40,6 +44,14 @@
 
       printf("Pontos Turísticos:\n");
       scanf ("%d", &pontos_turisticos);
+
+
+    //Calculo PIB PERCAPTA e Densidade Populacional Carta 2
+
+    
+        pib_percapta= pib/populacao;
+        densidade_populacional=populacao/area;
+
   
     //Impressão
 
@@ -51,7 +63,11 @@
     printf ("Área:%.1f \n",area);
     printf ("PIB:%.1f \n",pib);
     printf ("Quantidade de Pontos Turísticos:%d\n",pontos_turisticos);
+    printf ("PIB Percapta:%f\n",pib_percapta);
+    printf ("Densidade Populacional:%f\n",densidade_populacional);
       
+ 
+
     // Variáveis Carta 2
      
     
@@ -60,8 +76,11 @@
      char cidade1[25]= "Itabuna";
      int populacao1= 210000;
      float area1= 401;
-     double pib1= 4.200;
+     float pib1= 4.200;
      int pontos_turisticos1= 12;
+     float pib_percapta1;
+     float densidade_populacional1;
+
 
      //Entrada de Dados Carta 2
 
@@ -87,7 +106,15 @@
 
       printf("Pontos Turísticos:\n");
       scanf ("%d", &pontos_turisticos1);
+
+
+    //Calculo PIB PERCAPTA e Densidade Populacional Carta 2
+
+
+        pib_percapta1= pib1/populacao1;
+        densidade_populacional1=populacao1/area1;
     
+
     //Impressão 
    
    
@@ -99,7 +126,8 @@
     printf ("Área:%.1f \n",area1);
     printf ("PIB:%.1f \n",pib1);
     printf ("Quantidade de Pontos Turísticos:%d\n",pontos_turisticos1);
+    printf ("PIB Percapta:%f\n",pib_percapta1);
+    printf ("Densidade Populacional:%f\n",densidade_populacional1);
 
    return 0;
 }
-
