@@ -129,5 +129,23 @@
     printf ("PIB Percapta:%f\n",pib_percapta1);
     printf ("Densidade Populacional:%f\n",densidade_populacional1);
 
+ 
+  //Variáveis Super Poder
+    float super_poder_carta1;
+    float super_poder_carta2;
+
+
+    //Calculo Super Poder
+        
+        super_poder_carta1=(pib+area+populacao+pontos_turisticos+pib_percapta)-densidade_populacional;
+        super_poder_carta2=(pib1+area1+populacao1+pontos_turisticos1+pib_percapta1)-densidade_populacional1;
+
+
+  printf("Super Poder Carta 1:%f\n",super_poder_carta1);
+
+  printf("Super Poder Carta 2:%f\n",super_poder_carta2);
+
+  //Resultado
+
    return 0;
 }
