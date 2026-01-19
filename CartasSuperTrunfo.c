@@ -99,10 +99,10 @@
       scanf ("%d", &populacao1);
 
       printf("Área:\n");
-      scanf ("%.1f", &area1);
+      scanf ("%f", &area1);
 
       printf("PIB:\n");
-      scanf ("%.1f", &pib1);
+      scanf ("%f", &pib1);
 
       printf("Pontos Turísticos:\n");
       scanf ("%d", &pontos_turisticos1);
@@ -129,10 +129,36 @@
     printf ("PIB Percapta:%f\n",pib_percapta1);
     printf ("Densidade Populacional:%f\n",densidade_populacional1);
 
+ //Comparação de atributos
+
+  float atributo_pib;            
+  float atributo_pibpercapta;
+  float atributo_area;
+  float atributo_populacao;
+  int atributo_pontos_turisticos;
+  float atributo_densidade_populacional;
+
+atributo_pib=pib>pib1;
+atributo_pibpercapta=pib_percapta>pib_percapta1;
+atributo_area=area>area1;
+atributo_populacao=populacao>populacao1;
+atributo_pontos_turisticos=pontos_turisticos>pontos_turisticos1;
+atributo_densidade_populacional=densidade_populacional<densidade_populacional1;
+
+  printf(" Atributos vencedores!\n")
+  printf(" PIB vencedora:%f\n",atributo_pib);
+  printf("PIB Percapta vencedora:%f\n",atributo_pibpercapta);
+  printf("Área vencedora:%f\n",atributo_area);
+  printf("População vencedora:%f\n",atributo_populacao);
+  printf("Cidade com mais pontos turísticos%d\n",atributo_pontos_turisticos);
+  printf("Densidade Populacional vencedora%f\n",atributo_densidade_populacional);
+
+
  
   //Variáveis Super Poder
     float super_poder_carta1;
     float super_poder_carta2;
+    int resultado_vencedor;
 
 
     //Calculo Super Poder
@@ -145,7 +171,13 @@
 
   printf("Super Poder Carta 2:%f\n",super_poder_carta2);
 
-  //Resultado
+ //Resultado
+
+  resultado_vencedor=super_poder_carta1>super_poder_carta2;
+
+printf("Carta Vencedora:%d",resultado_vencedor);
+
+  
 
    return 0;
 }
