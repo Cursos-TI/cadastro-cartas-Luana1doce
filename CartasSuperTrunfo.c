@@ -145,7 +145,7 @@ atributo_populacao=populacao>populacao1;
 atributo_pontos_turisticos=pontos_turisticos>pontos_turisticos1;
 atributo_densidade_populacional=densidade_populacional<densidade_populacional1;
 
-  printf(" Atributos vencedores!\n")
+  printf(" Atributos vencedores!\n");
   printf(" PIB vencedora:%f\n",atributo_pib);
   printf("PIB Percapta vencedora:%f\n",atributo_pibpercapta);
   printf("Área vencedora:%f\n",atributo_area);
@@ -170,12 +170,13 @@ atributo_densidade_populacional=densidade_populacional<densidade_populacional1;
   printf("Super Poder Carta 1:%f\n",super_poder_carta1);
 
   printf("Super Poder Carta 2:%f\n",super_poder_carta2);
+ 
 
- //Resultado
-
-  resultado_vencedor=super_poder_carta1>super_poder_carta2;
-
-printf("Carta Vencedora:%d",resultado_vencedor);
+ if (super_poder_carta1 > super_poder_carta2) {
+    printf("Ual Carta 1 venceu\n");
+} else {
+    printf("Ual Carta 2 venceu\n");
+}
 
   
 
