@@ -87,7 +87,7 @@
       printf("Digite os dados das cartas\n");
     
       printf("Estado:\n");
-      scanf ("%c", &estado1);
+      scanf (  " %c", &estado1);
     
       printf("Código:\n");
       scanf ("%s", &codigo1);
@@ -128,6 +128,67 @@
     printf ("Quantidade de Pontos Turísticos:%d\n",pontos_turisticos1);
     printf ("PIB Percapta:%f\n",pib_percapta1);
     printf ("Densidade Populacional:%f\n",densidade_populacional1);
+
+//Menu para primeiro jogador
+int opcao;
+printf( "ATENÇÃO ! Escolha um atributo para competir!\n");
+printf(" DIGITE: \n");
+printf("1 para População;\n");
+printf("2 para Área;\n");
+printf("3 para PIB;\n");
+printf( " 4 para Pontos Turísticos;\n");
+printf("5 para PIB Percapta;\n");
+printf(" 6 para Densidade Populacional;\n");
+printf("Digite aqui..........");
+scanf("%d", &opcao);
+
+switch (opcao){
+
+case 1: 
+printf( "Você escolheu População!");
+if( populacao>=populacao1)
+{ printf ( "Jogador 1 ganhou!\n");}
+else { printf("Jogador 2 ganhou!\n");}
+break;
+
+
+case 2:
+printf( "Você escolheu Área!");
+if( area>=area1)
+{ printf ( "Jogador 1 ganhou!\n");}
+else { printf("Jogador 2 ganhou!\n");}
+break;
+
+case 3:
+printf( "Você escolheu PIB!");
+if( pib>=pib1)
+{ printf ( "Jogador 1 ganhou!\n");}
+else { printf("Jogador 2 ganhou!\n");}
+break;
+
+case 4:
+printf( "Você escolheu Pontos Turísticos!");
+if( pontos_turisticos>=pontos_turisticos1)
+{ printf ( "Jogador 1 ganhou!\n");}
+else { printf("Jogador 2 ganhou!\n");}
+break;
+
+case 5:
+printf( "Você escolheu PIB Percapta!");
+if( pib_percapta>=pib_percapta1)
+{ printf ( "Jogador 1 ganhou!\n");}
+else { printf("Jogador 2 ganhou!\n");}
+break;
+
+case 6:
+printf(" Voce escolheu Densidade Populacional!");
+if( densidade_populacional>=densidade_populacional1)
+{ printf ( "Jogador 1 ganhou!\n");}
+else { printf("Jogador 2 ganhou!\n");}
+break;
+default: printf("Opção inválida!");}
+ 
+
 
  //Comparação de atributos
 
@@ -177,8 +238,5 @@ atributo_densidade_populacional=densidade_populacional<densidade_populacional1;
 } else {
     printf("Ual Carta 2 venceu\n");
 }
-
-  
-
    return 0;
 }
